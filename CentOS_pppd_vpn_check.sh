@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#check that the VPN interface doesnt exist
 if ! ifconfig | grep ppp0;
 then
 		#kill any stale pppd sessions
